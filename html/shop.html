@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleShop.css">
+</head>
+<body>
+  <div class="container">
+    <section id="header" class="wrapper">
+      <!-- Nav -->
+        <div class="fixed sticky-top position-fixed d-flex justify-content-between w-100">
+          <div class="d-flex position-relative justify-content-between">
+            <aside id="sidebar">
+              <div class="sidebar-logo d-flex justify-content-center">
+            </div>
+            <ul class="sidebar-nav list-unstyled">
+              <div class="sidebar-head position-relative">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_sidebar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                      <h3>
+                          <i class="fa-solid fa-user-tie"></i>
+                          Hello, Log in
+                      </h3>
+              </div>
+              <div class="sidebar-content">
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link dropdown collapsed"
+                    data-toggle="collapse"
+                    data-target="#product"
+                    aria-expanded="true"
+                    aria-controls="product"
+                  >
+                    <i class="fa-solid fa-camera"></i>
+                    <span>All product</span>
+                  </a>
+                  <ul id="product"
+                    class="sidebar-dropdown list-unstyled collapse"
+                    data-parent="#sidebar">
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">DSLR Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Mirroless Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Action Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Compact Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Camcoders</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Lenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Accessories</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-item">
+                  <a href="cart.html" class="sidebar-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>My Order</span>
+                  </a>
+                </li>
+                  <li class="sidebar-item">
+                  <a href="login.html" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Account</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>Order Tracking</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="about.html" class="sidebar-link">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-blog"></i>
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="contact.html" class="sidebar-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Help & Support</span>
+                  </a>
+                </li>
+              </div>
+              <div class="sidebar-footer">
+                <h4>
+                    Follow us on -
+                </h4>
+                <div class="follow-social d-flex justify-content-between">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="desc_footer">
+                    <h6>© 2024 CameraX. All Rights Reserved.</h6>
+                </div>
+          </ul>
+        </aside>
+         <i class="fa-solid fa-list" id="toogle_btn"></i>
+         <div class="logo-desc">
+          <a href="index.html" class="ml-2 logo-text text-decoration-none desc"><span>TruongStore</span></a>
+        </div>
+          </div>
+          <div class="tool d-flex w-auto">
+            <div id="search_box" class="mr-4">
+              <input type="text" id="inputName"required placeholder="Search....."/>
+              <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
+            </div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+         <!-- End Nav -->
+    </section>
+
+      <section id="banner">
+        <h1>Product</h1>
+      </section>
+          <!-- Product -->
+            <section id="shop_product">
+                <div class="container">
+                <div class="search-box text-center">
+                  <input type="text" id="searchInput" placeholder="Search products...">
+                  <button onclick="searchProducts()" class="text-center">Search</button>
+              </div>
+                <div class="shop_list row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative" >
+                          <img src="../img/product/popular/1.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
+                          </strong>
+                          <h5 class="text-nowrap">GoPro10</h5>
+                          <p>54,500$</p>
+                          <div class="label">
+                            New
+                          </div>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop1.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/2.png" alt="" class="img_product">
+                          <br>
+                          <strong>
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                      
+                          </strong>
+                          <h5 class="text-nowrap">Canon 1500D</h5>
+                          <p>31,000 $</p>
+                          <div class="label_seller">
+                            #1 Seller
+                          </div>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop2.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/3.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
+    
+                          <h5 class="text-nowrap">Nikon Z 50</h5>
+                          <p>84,007$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop3.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/4.png" alt="" class="img_product">
+                          <br>
+                          <strong>
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+    
+                          </strong>
+                          <h5 class="text-nowrap">Sony RX100 </h5>
+                          <p>53,570$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop4.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/5.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;<b class="text-muted">&#9733;&#9733;</b></strong>
+    
+                          <h5 class="text-nowrap">Sony 14mm f/1.8 Lens</h5>
+                          <p>1,47,990$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop5.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6">
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/6.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
+                          <h5 class="text-nowrap">Sony PXW-Z280</h5>
+                          <p>409,990$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop6.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6"> 
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/7.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;&#9733;&#9733;</strong>
+                          <h5 class="text-nowrap">Canon Speedlite 470EX</h5>
+                          <p>24,990$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop7.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                      <div class="col-lg-3 col-md-6"> 
+                        <div class="product-item text-center position-relative">
+                          <img src="../img/product/popular/Product8-removebg-preview.png" alt="" class="img_product">
+                          <br>
+                          <strong>&#9733;&#9733;&#9733;&#9733;&#9733;
+                          </strong>
+                         
+                          <h5 class="text-nowrap">Nikon D850 Body</h5>
+                          <p>3,399.00$</p>
+                          <div class="heart">
+                            <i class="bi bi-heart"></i>
+                          </div>
+                          <a href="singleShop8.html"><button type="button" class="btn_look">Detail</button></a>
+                          <button type="button" class="btn_add">Add To Cart</button>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+              </section>
+          <!-- end product -->
+          <div class="container">
+            <section id="product_detail">
+                <!-- Nội dung chi tiết sản phẩm sẽ được thay đổi bằng JavaScript -->
+            </section>
+        </div>
+              <!-- pagination -->
+              <section id="pagination" class="text-center">
+                <nav aria-label="Page navigation example">
+                  <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                      <a class="page-link" href="#" tabindex="-1">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                      <a class="page-link" href="#">Next</a>
+                    </li>
+                  </ul>
+                </nav>
+              </section>
+              <!-- end pagination -->
+
+           <!-- Footer -->
+           <div class="container">
+            <section id="footer">
+              <h3 class="product-title text-center position-relative">TruongStore</h3>
+              <div class="row justify-content-between">
+                <div class="usefull text-center">
+                  <h4>USEFUL LINKS</h4>
+                  <div class="usefull-item d-flex flex-column">
+                    <a href="#">FAQs</a>
+                    <a href="contact.html">Help & Support</a>
+                    <a href="termsService.html">Terms of Service</a>
+                    <a href="#">Cancellation & Refunds</a>
+                  </div>
+                </div>
+                <div class="connect text-center">
+                 <div class="link d-flex justify-content-between">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <div class="foot-line">
+                    
+                  </div>
+                    <h4>CONNECT WITH US</h4>
+                    <form action="">
+                      <div class="row flex-column">
+                        <input type="text" placeholder="Your Email">
+                      <button class="btn_submit">SUBMIT</button>
+                      </div>
+                    </form>
+                </div>
+                <div class="quick_link d-flex flex-column text-center">
+                  <h4>QUICK LINKS</h4>
+                  <a href="#">Track Order</a>
+                  <a href="policy.html">Privacy Policy</a>
+                  <a href="#">Shipping Rates</a>
+                  <a href="#">Locate Service Centres</a>
+                </div>
+              </div>
+            </section>
+          </div>
+      
+      <!-- End Footer -->
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/shop.js"></script>
+</body>
+</html>

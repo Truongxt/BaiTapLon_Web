@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Detail</title>
+ <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleShop.css">
+</head>
+<body>
+  <div class="container">
+    <section id="header" class="wrapper">
+      <!-- Nav -->
+        <div class="fixed sticky-top position-fixed d-flex justify-content-between w-100">
+          <div class="d-flex position-relative justify-content-between">
+            <aside id="sidebar">
+              <div class="sidebar-logo d-flex justify-content-center">
+            </div>
+            <ul class="sidebar-nav list-unstyled">
+              <div class="sidebar-head position-relative">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" id="close_sidebar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                      <h3>
+                          <i class="fa-solid fa-user-tie"></i>
+                          Hello, Log in
+                      </h3>
+              </div>
+              <div class="sidebar-content">
+                <li class="sidebar-item">
+                  <a
+                    href="#"
+                    class="sidebar-link dropdown collapsed"
+                    data-toggle="collapse"
+                    data-target="#product"
+                    aria-expanded="true"
+                    aria-controls="product"
+                  >
+                    <i class="fa-solid fa-camera"></i>
+                    <span>All product</span>
+                  </a>
+                  <ul id="product"
+                    class="sidebar-dropdown list-unstyled collapse"
+                    data-parent="#sidebar">
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">DSLR Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Mirroless Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Action Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Compact Cameras</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Camcoders</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Lenses</a>
+                    </li>
+                    <li class="sidebar-item">
+                      <a href="shop.html" class="sidebar-link">Accessories</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="sidebar-item">
+                  <a href="cart.html" class="sidebar-link">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <span>My Order</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="login.html" class="sidebar-link">
+                    <i class="fa-solid fa-user"></i>
+                    <span>My Account</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                    <span>Order Tracking</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="about.html" class="sidebar-link">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>About us</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="#" class="sidebar-link">
+                    <i class="fa-solid fa-blog"></i>
+                    <span>Blog</span>
+                  </a>
+                </li>
+                <li class="sidebar-item">
+                  <a href="contact.html" class="sidebar-link">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Help & Support</span>
+                  </a>
+                </li>
+              </div>
+              <div class="sidebar-footer">
+                <h4>
+                    Follow us on -
+                </h4>
+                <div class="follow-social d-flex justify-content-between">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="desc_footer">
+                    <h6>© 2024 CameraX. All Rights Reserved.</h6>
+                </div>
+          </ul>
+        </aside>
+         <i class="fa-solid fa-list" id="toogle_btn"></i>
+         <div class="logo-desc">
+          <a href="index.html" class="ml-2 logo-text text-decoration-none desc"><span>TruongStore</span></a>
+        </div>
+          </div>
+          <div class="tool d-flex w-auto">
+            <div id="search_box" class="mr-4">
+              <input type="text" id="inputName"required placeholder="Search....."/>
+              <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
+            </div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
+            <a href="login.html"><i class="fa-solid fa-user"></i></a>
+          </div>
+        </div>
+      </div>
+         <!-- End Nav -->
+    </section>
+          <!-- detail -->
+          <div class="container">
+            <section id="product_detail">
+              <div class="d-flex justify-content-center">
+                <div class="image col-6">
+                  <img src="../img/product/popular/Product8-removebg-preview.png" alt="">
+                </div>
+                <div class="content col-6">
+                  <h2>Nikon D850</h2>
+                  <h4>23 MP Action Camera</h4>
+                  <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
+                      </strong>
+                      <span>360 Ratings & Reviews</span>
+                    <p>60,500$</p>
+                    <div class="group-btn row">
+                      <a href="#" class="col-12 mb-2"><button type="button" class="btn_add">Buy Now</button></a>
+                      <a href="#" class="col-12"><button type="button" class="btn_add">Add to cart</button></a>
+                    </div>
+                    <h3>Product Highlights -</h3>
+                    <ul class="desc list-group">
+                      <li>IMX677 1/2.3 sensor</li>
+                      <li>5.3K60 + 4K120 UHD - Video resolutio</li>
+                      <li>Webcam - 1080p Live Streaming</li>
+                      <li>Front LCD and Touch Rear Screens</li>
+                      <li>Waterproof to 33ft</li>
+                    </ul>
+                </div>
+              </div>
+            </section>
+          </div>
+            <!-- end detail -->
+
+
+
+          <!-- footer -->
+          <div class="container">
+            <section id="footer">
+              <h3 class="product-title text-center position-relative">TruongStore</h3>
+              <div class="row justify-content-between">
+                <div class="usefull text-center">
+                  <h4>USEFUL LINKS</h4>
+                  <div class="usefull-item d-flex flex-column">
+                    <a href="#">FAQs</a>
+                    <a href="contact.html">Help & Support</a>
+                    <a href="termsService.html">Terms of Service</a>
+                    <a href="#">Cancellation & Refunds</a>
+                  </div>
+                </div>
+                <div class="connect text-center">
+                 <div class="link d-flex justify-content-between">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  </div>
+                  <div class="foot-line">
+                    
+                  </div>
+                    <h4>CONNECT WITH US</h4>
+                    <form action="">
+                      <div class="row flex-column">
+                        <input type="text" placeholder="Your Email">
+                      <button class="btn_submit">SUBMIT</button>
+                      </div>
+                    </form>
+                </div>
+                <div class="quick_link d-flex flex-column text-center">
+                  <h4>QUICK LINKS</h4>
+                  <a href="#">Track Order</a>
+                  <a href="policy.html">Privacy Policy</a>
+                  <a href="#">Shipping Rates</a>
+                  <a href="#">Locate Service Centres</a>
+                </div>
+              </div>
+            </section>
+          </div>
+          <!-- end footer -->
+        <script src="../js/main.js"></script>
+</body>
+</html>

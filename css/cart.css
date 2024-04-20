@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+  :root{
+    --main-color:#13131F;
+    --text-color:white;
+}
+/* variable */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: var(--text-color);
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-color);
+}
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.subtotal{
+    padding: 0.5rem 1rem;
+    border: 1px solid rgb(255, 255, 255,0.6);
+}
+.subtotal .h5{
+    font-size: 18px;
+}
+#cart .cart-box .cart-detail .cart-item{
+    border-bottom: 1px solid white;
+    padding: 3rem 0rem;
+}
+#cart .cart-box .cart-detail .cart-item img{
+    width: 25vh;
+    height: auto;
+    margin: 1.5rem;
+}
+#cart .cart-box .cart-detail .cart-item h3{
+    font-size: 20px;
+}
+#cart .cart-box .cart-detail .cart-item h2{
+    font-size: 25px;
+}
+#cart .cart-box .cart_payment{
+    margin: 2rem;
+}
+#cart .cart-box .cart_payment p{
+    font-size: 18px;
+}
+#cart .cart-box .cart_payment .cart-protect{
+    border: 1px solid white;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+#cart .cart-box .cart_payment .discount{
+    color: green;
+}
+#cart .cart-box .cart_payment .free{
+    color: red;
+}
+#cart .cart-box .cart_payment .deliver-fee{
+    border-bottom: 1px solid white;
+}
+#cart .cart-box .cart_payment .amount{
+    font-weight: 500;
+}
+#cart .cart-box .cart_payment .total-amount{
+    padding: 1rem 0rem;
+}
+#cart .cart-box .cart_payment .btn-checkout{
+    background-color: #D6002F;
+    transition: all 0.5s ease-in-out;
+}
+#cart .cart-box .cart_payment .btn-checkout:hover{
+    box-shadow: 0px 20px 30px 0px black;
+}
+#cart .cart-box .cart_payment .coupon-btn input{
+    width: 80%;
+    color: black;
+}
+
+.btn-coupon{
+    background-color: #A9AFC3;
+    width: 20%;
+    font-size: 14px;
+}
+#cart .cart-box .cart_payment .coupon-btn{
+    margin: 12px 0px;
+}
