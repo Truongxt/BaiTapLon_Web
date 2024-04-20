@@ -276,7 +276,7 @@ a.sidebar-link:hover {
     padding: 5rem 2rem;
     align-items: center;
     justify-content: center;
-    max-height: 25rem;
+    max-height: 40rem;
 }
 #popular-product .popular-product-item img{
     max-width: 50%;

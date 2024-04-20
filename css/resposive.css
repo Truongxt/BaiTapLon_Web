@@ -1,7 +1,8 @@
 @media (max-width: 768px) {
-    /* Điều chỉnh các phần tử để phù hợp với màn hình nhỏ hơn */
     .container {
         padding: 0;
     }
-    /* Thực hiện thay đổi layout, v.v. */
+    #Carousel_section .carousel-item .carousel-box{
+            justify-content: space-evenly ;
+    }
 }
