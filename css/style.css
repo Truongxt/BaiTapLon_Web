@@ -514,3 +514,9 @@ a.sidebar-link:hover {
     color: white;
 }
 /* end idea */
+
+/* Introdice */
+#introduce p,ul{
+    color: rgb(255, 255, 255,0.8);
+}
+/* End Introduce */
