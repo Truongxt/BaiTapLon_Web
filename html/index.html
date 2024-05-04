@@ -12,7 +12,7 @@
     <!-- <link rel="stylesheet" href="../css/all.css"/> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
-  <body>
+  <body onload="loadSLSP()">
       <div class="container">
         <section id="header" class="wrapper">
           <!-- Nav -->
@@ -137,7 +137,12 @@
                   <input type="text" id="inputName"required placeholder="Search....."/>
                   <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
                 </div>
-                <a href="cart.html"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
+                <div class="cart-icon mr-4">
+                  <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
+                  <span id="slsp"></span>
+                </a>
+                </div>
+                
                 <a href="login.html"><i class="fa-solid fa-user"></i></a>
               </div>
             </div>
@@ -156,10 +161,10 @@
                               <p>Simply for first-time DSLR user</p>
                               <div class="price d-flex">
                                   <div class="price-old">
-                                      <h4><del>33,095$</del></h4>
+                                      <h4><del>33.095</del></h4>
                                   </div>
                                     <div class="price-new">
-                                        <h4>31,300$</h4>
+                                        <h4>31.300</h4>
                                     </div>
                               </div>
                                 <div class="btn-shop">
@@ -179,10 +184,10 @@
                         <p>Pefection in your pocket</p>
                         <div class="price d-flex">
                           <div class="price-old">
-                                  <h4><del>56,334$</del></h4>
+                                  <h4><del>56.334</del></h4>
                           </div>
                             <div class="price-new">
-                                <h4>53,863$</h4>
+                                <h4>53.863</h4>
                             </div>
                         </div>
                         
@@ -200,8 +205,13 @@
                     <div class="caroulsel-desc">
                         <h3>GoPro - Hero10 Black</h3>
                         <p>The most powerfull GoPro ever.</p>
-                        <div class="price-new">
-                            <h4>54,122$</h4>
+                        <div class="price d-flex">
+                          <div class="price-old">
+                                  <h4><del>90.334</del></h4>
+                          </div>
+                            <div class="price-new">
+                                <h4>30.863</h4>
+                            </div>
                         </div>
                         <div class="btn-shop">
                             <a href="shop.html"><button type="button" class="btn btn-primary">Shop now</button></a>
@@ -271,24 +281,24 @@
             <h3 class="product-title text-center position-relative">Popular Product</h3>
                 <div class="row">
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="popular-product-item text-center position-relative" id="1">
                       <img src="../img/product/popular/1.png" alt="">
                       <br>
                       <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
                       </strong>
                       <h5>Hero GoPro10</h5>
-                      <p>54,500$</p>
+                      <p>54.500</p>
                       <div class="label">
                         New
                       </div>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button"class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="popular-product-item text-center position-relative"  id="2">
                       <img src="../img/product/popular/2.png" alt="">
                       <br>
                       <strong>
@@ -296,32 +306,32 @@
                   
                       </strong>
                       <h5>Canon 1500D</h5>
-                      <p>31,000 $</p>
+                      <p>31.000</p>
                       <div class="label_seller">
                         #1 Seller
                       </div>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button" class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="text-center position-relative popular-product-item" id="3">
                       <img src="../img/product/popular/3.png" alt="">
                       <br>
                       <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
 
                       <h5>Nikon Z 50</h5>
-                      <p>84,007$</p>
+                      <p>84.007</p>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button" class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="text-center position-relative popular-product-item" id="4">
                       <img src="../img/product/popular/4.png" alt="">
                       <br>
                       <strong>
@@ -329,54 +339,54 @@
 
                       </strong>
                       <h5>Sony RX100 </h5>
-                      <p>53,570$</p>
+                      <p>53.570</p>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button" class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="text-center position-relative popular-product-item" id="5">
                       <img src="../img/product/popular/5.png" alt="">
                       <br>
                       <strong>&#9733;&#9733;&#9733;<b class="text-muted">&#9733;&#9733;</b></strong>
 
                       <h5>Sony 14mm f/1.8 Lens</h5>
-                      <p>1,47,990$</p>
+                      <p>147.990</p>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button" class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="text-center position-relative popular-product-item" id="6">
                       <img src="../img/product/popular/6.png" alt="">
                       <br>
                       <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
 
                       <h5>Sony PXW-Z280</h5>
-                      <p>409,990$</p>
+                      <p>409.990</p>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button type="button" class="btn_add">Add To Cart</button>
+                      <button type="button" class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6"> 
-                    <div class="popular-product-item text-center position-relative">
+                    <div class="text-center position-relative popular-product-item"  id="7">
                       <img src="../img/product/popular/7.png" alt="">
                       <br>
                       <strong class="m-0 p-0">&#9733;&#9733;&#9733;&#9733;&#9733;
                       </strong>
                      
                       <h5>Canon Speedlite 470EX</h5>
-                      <p>24,990$</p>
+                      <p>24.990</p>
                       <div class="heart">
                         <i class="bi bi-heart"></i>
                       </div>
-                      <button class="btn_add">Add To Cart</button>
+                      <button class="btn_add btn_shop">Add To Cart</button>
                     </div>
                   </div>
                   <div class="col-lg-3 col-md-6">
@@ -570,5 +580,6 @@
 </div>
                   
     <script src="../js/main.js"></script>
+    <script src="../js/xuLyGioHag.js"></script>
   </body>
 </html>

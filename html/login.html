@@ -219,7 +219,11 @@
           var storedEmail = localStorage.getItem('email');
           var storedPassword = localStorage.getItem('password');
           if(email== storedEmail && password== storedPassword){
+            localStorage.setItem("email",storedEmail);
+            localStorage.setItem("password",storedPassword);
+            window.location.href='index.html';
             alert("Login success")
+
           }
           else{
             alert("Login Failed ")
