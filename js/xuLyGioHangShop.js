@@ -10,13 +10,12 @@ var cart= JSON.parse(localStorage.getItem("cart"));
     }
 
 var btn = document.getElementsByClassName("btn_shop");
-
 for (let i=0;i<btn.length;i++){
     btn[i].addEventListener("click",function(){
-        var hinh = btn[i].parentElement.childNodes[1].src;
-        var ten = btn[i].parentElement.childNodes[7].textContent;
-        var gia = btn[i].parentElement.childNodes[9].textContent;
-        console.log(hinh)
+        var hinh = btn[i].parentElement.parentElement.parentElement.parentElement.childNodes[1].childNodes[1].src;
+        var ten = btn[i].parentElement.parentElement.parentElement.childNodes[1].textContent;
+        var gia = btn[i].parentElement.parentElement.parentElement.childNodes[9].textContent;
+        console.log(ten)
     var soLuong = 1;
     var sp= {
         'hinh':hinh,
@@ -24,6 +23,8 @@ for (let i=0;i<btn.length;i++){
         'gia':gia,
         'soluong':soLuong
     }
+    console.log(sp)
+
     gioHang.push(sp)
     localStorage.setItem("cart",JSON.stringify(gioHang));
     getsoLuongSP();

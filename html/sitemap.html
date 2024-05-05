@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Detail</title>
- <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <title>Shop</title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <script src="../js/jquery-3.7.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="../css/style.css">
@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body onload="loadDataCart()">
+<body>
   <div class="container">
     <section id="header" class="wrapper">
       <!-- Nav -->
@@ -76,7 +76,7 @@
                     <span>My Order</span>
                   </a>
                 </li>
-                <li class="sidebar-item">
+                  <li class="sidebar-item">
                   <a href="login.html" class="sidebar-link">
                     <i class="fa-solid fa-user"></i>
                     <span>My Account</span>
@@ -143,53 +143,23 @@
               <input type="text" id="inputName"required placeholder="Search....."/>
               <i class="fa-solid fa-magnifying-glass" id="icon_search"></i>
             </div>
-            <div class="cart-icon mr-4">
-              <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>
-              <span id="slsp"></span>
-              </a>
-            </div>
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping mr-4"></i></a>
             <a href="login.html"><i class="fa-solid fa-user"></i></a>
           </div>
         </div>
       </div>
          <!-- End Nav -->
     </section>
-          <!-- detail -->
-          <div class="container">
-            <section id="product_detail">
-              <div class="d-flex justify-content-center">
-                <div class="image col-6">
-                  <img src="../img/product/popular/Product8-removebg-preview.png" alt="">
-                </div>
-                <div class="content col-6">
-                  <h2>Nikon D850</h2>
-                  <h4>23 MP Action Camera</h4>
-                  <strong>&#9733;&#9733;&#9733;&#9733;<b class="text-muted">&#9733;</b></strong>
-                      </strong>
-                      <span>360 Ratings & Reviews</span>
-                    <p>60.500</p>
-                    <div class="group-btn row">
-                      <a href="#" class="col-12 mb-2"><button type="button" class="btn_add">Buy Now</button></a>
-                      <a href="#" class="col-12"><button type="button" class="btn_add btn_shop">Add to cart</button></a>
-                    </div>
-                    <h3>Product Highlights -</h3>
-                    <ul class="desc list-group">
-                      <li>IMX677 1/2.3 sensor</li>
-                      <li>5.3K60 + 4K120 UHD - Video resolutio</li>
-                      <li>Webcam - 1080p Live Streaming</li>
-                      <li>Front LCD and Touch Rear Screens</li>
-                      <li>Waterproof to 33ft</li>
-                    </ul>
-                </div>
-              </div>
-            </section>
-          </div>
-            <!-- end detail -->
 
+      <section id="banner">
+        <h1>SiteMap</h1>
+      </section>
+      <div class="row text-center justify-content-center align-content-center">
+        <img src="../img/sitemap.png" alt="" width="100%" height="100%">
 
-
-          <!-- footer -->
-          <div class="container">
+      </div>
+           <!-- Footer -->
+           <div class="container">
             <section id="footer">
               <h3 class="product-title text-center position-relative">TruongStore</h3>
               <div class="row justify-content-between">
@@ -229,8 +199,10 @@
               </div>
             </section>
           </div>
-          <!-- end footer -->
-          <script src="../js/xuLyGioHangShop.js"></script>
-        <script src="../js/main.js"></script>
+      
+      <!-- End Footer -->
+    </div>
+    <script src="../js/main.js"></script>
+    <script src="../js/shop.js"></script>
 </body>
 </html>
